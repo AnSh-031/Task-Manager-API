@@ -3,6 +3,7 @@ import mongoose from "mongoose"
 import express from "express";
 import router1 from "./routes/authRoutes.js"
 import router2 from "./routes/taskRoutes.js"
+import cors from "cors"
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ try{
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.use("/api/v1/auth", router1);
 app.use("/api/v1/tasks", router2);

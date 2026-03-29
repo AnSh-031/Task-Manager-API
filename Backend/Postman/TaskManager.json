@@ -1,0 +1,803 @@
+{
+  "info": {
+    "_postman_id": "9a0398f7-1624-4d95-8436-a5588b908ba8",
+    "name": "Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45916306",
+    "_collection_link": "https://go.postman.co/collection/45916306-9a0398f7-1624-4d95-8436-a5588b908ba8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Signup user",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"Ansh Bhardwaj\",\n    \"password\" : \"hello123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/signup",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "34"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"22-kBF4h4CvRm1739CwIVijfn53D1Q\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 12:43:56 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"You are signed up !!\"\n}"
+        },
+        {
+          "name": "Signup admin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"karan\",\n    \"password\" : \"narak123\",\n    \"role\" : \"admin\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/signup",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "34"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"22-kBF4h4CvRm1739CwIVijfn53D1Q\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:12:53 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"You are signed up !!\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Signin",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Signin user",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"Ansh Bhardwaj\",\n    \"password\" : \"hello123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/signin",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "signin"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "248"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"f8-THQVobz5DNKFmRuJMPh8TcndErE\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 12:45:24 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"You are signed in !!\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s\"\n}"
+        },
+        {
+          "name": "Signin admin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\" : \"karan\",\n    \"password\" : \"narak123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/signin",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "signin"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "238"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ee-5LLDSn67IynTi5jJZAZvRkabPD0\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:14:57 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"You are signed in !!\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkyNTU1NzQ3NjdkOTJkMWYyYzMxMSIsInVzZXJuYW1lIjoia2FyYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzQ3OTAwOTd9.nk4Yb7_zxNvxt2klIA2xTANhZr0Ac-iCgAcCwJM0m18\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Create Task 1",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\" : \"Essay\",\n    \"description\" : \"write a brief essay on elephant.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "27"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-n6+b8tnX+RQ9wrhqJOItDsyI8ZI\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 12:54:19 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Task added !!\"\n}"
+        },
+        {
+          "name": "Create Task 2",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\" : \"poem\",\n    \"description\" : \"write a poem on sea.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "27"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-n6+b8tnX+RQ9wrhqJOItDsyI8ZI\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 12:58:56 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Task added !!\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get all Tasks",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get all Tasks",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "486"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1e6-SvdTroAxw/1lcbNZa2zzWb7129o\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 12:59:25 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"Tasks\": [\n        {\n            \"_id\": \"69c920fb665c7dc068214a4f\",\n            \"title\": \"Essay\",\n            \"description\": \"write a brief essay on elephant.\",\n            \"status\": \"pending\",\n            \"createdBy\": \"69c91e8c6a9e6b19c061871c\",\n            \"createdAt\": \"2026-03-29T12:54:19.207Z\",\n            \"updatedAt\": \"2026-03-29T12:54:19.207Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"69c92210665c7dc068214a54\",\n            \"title\": \"poem\",\n            \"description\": \"write a poem on sea.\",\n            \"status\": \"pending\",\n            \"createdBy\": \"69c91e8c6a9e6b19c061871c\",\n            \"createdAt\": \"2026-03-29T12:58:56.274Z\",\n            \"updatedAt\": \"2026-03-29T12:58:56.274Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get SIngle Task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get SIngle Task",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/69c920fb665c7dc068214a4f",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                "69c920fb665c7dc068214a4f"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "252"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"fc-klZheeOSAT5dcBTCdcQ2hVWUWsk\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:03:03 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"Task\": {\n        \"_id\": \"69c920fb665c7dc068214a4f\",\n        \"title\": \"Essay\",\n        \"description\": \"write a brief essay on elephant.\",\n        \"status\": \"pending\",\n        \"createdBy\": \"69c91e8c6a9e6b19c061871c\",\n        \"createdAt\": \"2026-03-29T12:54:19.207Z\",\n        \"updatedAt\": \"2026-03-29T12:54:19.207Z\",\n        \"__v\": 0\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update Task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Update Task",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"description\" : \"Write an essay on tiger in 200 words\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/69c920fb665c7dc068214a4f",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                "69c920fb665c7dc068214a4f"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "27"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-iGuSlffEdoAummoNhQdIFyZh+7M\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:05:18 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Task updated.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Not Authorized",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkxZThjNmE5ZTZiMTljMDYxODcxYyIsInVzZXJuYW1lIjoiQW5zaCBCaGFyZHdhaiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc0Nzg4MzI0fQ.VoT7zHDCyuHbJME8cbvnBHEbwKCzPP8V6v1VVWuug_s",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/69c92210665c7dc068214a54",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                "69c92210665c7dc068214a54"
+              ]
+            }
+          },
+          "status": "Forbidden",
+          "code": 403,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "28"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1c-j+znjSBGYk1IoOLxkUWYndvLrls\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:07:39 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Not Authorized\"\n}"
+        },
+        {
+          "name": "Authorized",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzkyNTU1NzQ3NjdkOTJkMWYyYzMxMSIsInVzZXJuYW1lIjoia2FyYW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NzQ3OTAwOTd9.nk4Yb7_zxNvxt2klIA2xTANhZr0Ac-iCgAcCwJM0m18",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tasks/69c92210665c7dc068214a54",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tasks",
+                "69c92210665c7dc068214a54"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "27"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1b-/On5gVcm9BUHO72txp62aRQ1Je4\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 29 Mar 2026 13:16:19 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Task Deleted.\"\n}"
+        }
+      ]
+    }
+  ]
+}
